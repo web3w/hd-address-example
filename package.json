@@ -1,37 +1,25 @@
 {
   "name": "hd-address",
-  "version": "3.0.0",
-  "description": "HD wallet address generation utility",
+  "version": "1.0.1",
+  "description": "An example of hd Wallet",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "test"
   },
   "keywords": [
     "HD",
-    "wallet",
+    "hd wallet",
+    "address",
     "BTC",
     "ETH",
-    "TRX",
-    "bip32",
-    "bip39",
-    "bip44"
+    "TRX"
   ],
   "author": "txdev",
-  "repository": "git@github.com:gisvr/hd-address",
-  "homepage": "https://github.com/gisvr/hd-address",
+  "repository": "git@github.com:gisvr/hd-address-example",
+  "homepage": "https://github.com/gisvr/hd-address-example",
   "license": "Apache-2.0 License",
   "dependencies": {
-    "bip32": "^2.0.5",
-    "bip39": "^3.0.2",
-    "bs58": "^4.0.1",
-    "coininfo": "^5.1.0",
-    "coinkey": "^3.0.0",
-    "coinstring": "^2.3.0",
-    "eckey": "^1.0.0",
-    "ethereumjs-util": "^5.2.0"
-  },
-  "devDependencies": {
-    "hd-address-verify": "^1.0.2",
-    "mocha": "^7.1.2"
+    "hd-address": "^3.1.2",
+    "hd-address-verify": "^1.0.2"
   }
 }
