@@ -37,10 +37,6 @@ root -- BIP44
 ## Other
 1. **TRX address using private key or public key**  [example](address/trx.address.js) 
 
-# License
-
-[MIT](./LICENSE)
-
 ### Donor Address
 ```js
 "BTC": "1HthGRdzxunKAiMSazDdL8PZhE4qWpeBNK", 
