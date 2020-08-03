@@ -2,13 +2,13 @@
 const hdAddress = require("hd-address")
 
 let hdIndex = 6677
-const myselfMnemonic = "star star"
-let hd = hdAddress.HD(myselfMnemonic)
+let mnemonic = hdAddress.mnemonic.getRandomMnemonic()
+let hd = hdAddress.HD(mnemonic)
 
 
 let getPublicKeyByChainCode = () => {
     let hdPath = "m/44'/0'/1'"
-    let {pub, chainCode} = hd.wallet.getPathChainCode(hdPath)
+    let {pub, chainCode} = hd.wallet.getChainCodeByPath(hdPath)
     console.log(hdPath, "chainCode", chainCode.toString("hex"),"\n")
 
     // pubKey + chainCode +childPath =>  address
@@ -19,14 +19,14 @@ let getPublicKeyByChainCode = () => {
 
     //path =>  address
     let testPath = "m/44'/0'/1'/1/" + hdIndex
-    let test = hd.wallet.getPathChainCode(testPath)
+    let test = hd.wallet.getChainCodeByPath(testPath)
     let testAaddr = hd.BTC.getAddressByPublicKey(test.pub)
     console.log(testPath, test.pub.toString("hex"),"BTC Address",testAaddr.address)
 }
 
 let getPrivateKeyByChainCode = () => {
     let hdPath = "m/44'/0'/1'"
-    let {pri, chainCode} = hd.wallet.getPathChainCode(hdPath)
+    let {pri, chainCode} = hd.wallet.getChainCodeByPath(hdPath)
     console.log(hdPath, "chainCode", chainCode.toString("hex"))
 
     // pubKey + chainCode +childPath =>  address
@@ -37,9 +37,12 @@ let getPrivateKeyByChainCode = () => {
 
     //path =>  address
     let testPath = "m/44'/0'/1'/1/" + hdIndex
-    let test = hd.wallet.getPathChainCode(testPath)
+    let test = hd.wallet.getChainCodeByPath(testPath)
     console.log(testPath, test.pub.toString("hex"))
     console.log("privite", testPath, test.pri.toString("hex"))
 }
 
+console.log("----------- getPublicKeyByChainCode ------------")
 getPublicKeyByChainCode()
+// console.log("----------- getPrivateKeyByChainCode ------------")
+// getPrivateKeyByChainCode()

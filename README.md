@@ -1,7 +1,10 @@
 # hd-address-example
+An example of hd Wallet
+
+hd-address:
 [![NPM version](https://img.shields.io/npm/v/hd-address?style=flat-square)](https://www.npmjs.com/package/hd-address)
 
-An example of hd Wallet
+
 
 ### Getting started
 ### Reference 
@@ -20,17 +23,17 @@ root -- BIP44
 ```
  
 ## Initialization
-### Mnemonic Initialization [example](init/mnemonic.js) 
-### Seed Initialization  [example](init/seed.js) 
+1. **Mnemonic Initialization** [example](init/mnemonic.js) 
+2. **Seed Initialization**  [example](init/seed.js) 
 
 
 ## Basic Usage
 
-### **Get BTC ETH TRX address :** [example](init/mnemonic.js) 
-### **Get keypair**   [get keypair example](./test/index.getkeypair.test.js)
+1. **Get BTC ETH TRX address** [example](init/mnemonic.js) 
+2. **Get keypair**   [get keypair example](./test/index.getkeypair.test.js)
 
 ## Advanced Usage
-### **extension**  [example](init/extension/index.js) 
+1. **EOS extension**  [example](init/extension/index.js) 
 
 # License
 

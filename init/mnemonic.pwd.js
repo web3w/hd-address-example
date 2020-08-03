@@ -1,8 +1,8 @@
 'use strict';
 const hdAddress = require("hd-address")
 let hdIndex = 6677
-const myselfMnemonic = "star star"
-let hd = hdAddress.HD(myselfMnemonic,hdAddress.keyType.mnemonic,"star")
+const mnemonic = hdAddress.mnemonic.getRandomMnemonic()
+let hd = hdAddress.HD(mnemonic,hdAddress.keyType.mnemonic,"star")
 
 let examplePwd =  () => {
     let addr =  hd.BTC.getAddress(hdIndex)

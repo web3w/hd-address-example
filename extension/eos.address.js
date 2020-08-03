@@ -1,6 +1,6 @@
 'use strict';
 
-const AddressClass = require("../../index").AddressClass
+const AddressClass = require("hd-address").AddressClass
 
 module.exports = class EosAddress extends AddressClass {
     constructor(hd) {

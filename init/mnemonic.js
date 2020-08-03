@@ -1,8 +1,8 @@
 'use strict';
 const hdAddress = require("hd-address")
 let hdIndex = 6677
-const myselfMnemonic = "star star"
-let hd = hdAddress.HD(myselfMnemonic)
+const mnemonic = hdAddress.mnemonic.getRandomMnemonic()
+let hd = hdAddress.HD(mnemonic)
 
 let example =  () => {
     let addr =  hd.BTC.getAddress(hdIndex)
