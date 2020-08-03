@@ -17,7 +17,7 @@
   "author": "txdev",
   "repository": "git@github.com:gisvr/hd-address-example",
   "homepage": "https://github.com/gisvr/hd-address-example",
-  "license": "Apache-2.0 License",
+  "license": "MIT",
   "dependencies": {
     "hd-address": "git+ssh://git@github.com:gisvr/hd-address.git",
     "hd-address-verify": "^1.0.2"
