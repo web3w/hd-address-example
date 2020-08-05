@@ -34,6 +34,10 @@ root -- BIP44
 1. **EOS extension**  [example](init/extension/index.js) 
 2. **Get address using chain code: example** [example](chaincode/chaincode.js) 
 
+# CLI
+1. **Creating a new HD wallet form mnemonic,seed,base58:** [example](cli/create.wallet.js)
+2. **Deriving keys at a HD path** [example](cli/getaddress.js)
+
 ## Other
 1. **TRX address using private key or public key**  [example](address/trx.address.js) 
 

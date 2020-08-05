@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "hd-address": "git+ssh://git@github.com:gisvr/hd-address.git",
+    "hd-address-cli": "git+ssh://git@github.com:gisvr/hd-address-cli.git",
     "hd-address-verify": "^1.0.2"
   }
 }
