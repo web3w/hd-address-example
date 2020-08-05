@@ -35,6 +35,7 @@ root -- BIP44
 ### CLI
 1. **Creating a new HD wallet form mnemonic,seed,base58:** [example](cli/create.wallet.js)
 2. **Deriving keys at a HD path** [example](cli/getaddress.js)
+2. **Batch create address** [example](cli/batch.generate.address.js)
 
 ### Other
 1. **TRX address using private key or public key**  [example](address/trx.address.js) 
