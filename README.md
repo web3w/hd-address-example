@@ -3,8 +3,6 @@ An example of hd Wallet
 
 [![NPM version](https://img.shields.io/npm/v/hd-address?style=flat-square)](https://www.npmjs.com/package/hd-address)
 
-
-### Getting started
 ### Reference 
 [HD Wallet (bip32)](https://github.com/bitcoin/bips/blob/master/bip-0032/derivation.png)
 [Mnemonic wordlists reference (bip39)](https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md) 
@@ -20,25 +18,25 @@ root -- BIP44
                           
 ```
  
-## Initialization
+### Initialization
 1. **Mnemonic Initialization** [example](init/mnemonic.js) 
 2. **Seed Initialization**  [example](init/seed.js) 
 3. **Base58 Initialization** [example](init/base58.js)
 
-## Basic Usage
+### Basic Usage
 1. **Get Mnemonic** [example](mnemonic_safe/mnemonic.js)
 2. **Get BTC ETH TRX address** [example](init/mnemonic.js) 
 3. **Get keypair**   [get keypair example](./address/address.keypair.js)
 
-## Advanced Usage
+### Advanced Usage
 1. **EOS extension**  [example](init/extension/index.js) 
 2. **Get address using chain code: example** [example](chaincode/chaincode.js) 
 
-# CLI
+### CLI
 1. **Creating a new HD wallet form mnemonic,seed,base58:** [example](cli/create.wallet.js)
 2. **Deriving keys at a HD path** [example](cli/getaddress.js)
 
-## Other
+### Other
 1. **TRX address using private key or public key**  [example](address/trx.address.js) 
 
 ### Donor Address
